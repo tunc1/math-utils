@@ -24,4 +24,14 @@ class MathUtilTest
         Exception e=assertThrows(IllegalArgumentException.class,()->MathUtil.calculateQuadraticEquation(a,b,c));
         assertEquals("Discriminant is less than zero",e.getMessage());
     }
+    @Test
+    void isASquareNumber_returnsTrue()
+    {
+        assertTrue(MathUtil.isASquareNumber(9));
+    }
+    @Test
+    void isASquareNumber_returnsFalse()
+    {
+        assertFalse(MathUtil.isASquareNumber(5));
+    }
 }

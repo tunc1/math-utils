@@ -12,4 +12,13 @@ public class MathUtil
         double x2=(-1*b-d)/2*a;
         return new double[]{x1,x2};
     }
+    public static boolean isASquareNumber(int a)
+    {
+        for(int i=0;i<a;i++)
+        {
+            if(i*i==a)
+                return true;
+        }
+        return false;
+    }
 }
