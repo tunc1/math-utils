@@ -34,4 +34,13 @@ class MathUtilTest
     {
         assertFalse(MathUtil.isASquareNumber(5));
     }
+    @Test
+    void highestCommonFactor()
+    {
+        assertAll("highestCommonFactor",
+                ()->assertEquals(2,MathUtil.highestCommonFactor(6,4)),
+                ()->assertEquals(1,MathUtil.highestCommonFactor(8,9)),
+                ()->assertEquals(10,MathUtil.highestCommonFactor(80,70)),
+                ()->assertEquals(3,MathUtil.highestCommonFactor(6,9)));
+    }
 }

@@ -21,4 +21,15 @@ public class MathUtil
         }
         return false;
     }
+    public static int highestCommonFactor(int a,int b)
+    {
+        int smallest=Math.min(a,b);
+        int highest=1;
+        for(int i=2;i<=smallest;i++)
+        {
+            if(a%i==0&&b%i==0&&i>highest)
+                highest=i;
+        }
+        return highest;
+    }
 }
