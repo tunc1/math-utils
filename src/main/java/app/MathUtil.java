@@ -1,5 +1,8 @@
 package app;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class MathUtil
 {
     public static double[] calculateQuadraticEquation(double a,double b,double c)
@@ -31,5 +34,15 @@ public class MathUtil
                 highest=i;
         }
         return highest;
+    }
+    public static List<Integer> divisors(int a)
+    {
+        List<Integer> list=new LinkedList<>();
+        for(int i=1;i<=a;i++)
+        {
+            if(a%i==0)
+                list.add(i);
+        }
+        return list;
     }
 }

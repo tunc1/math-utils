@@ -3,6 +3,7 @@ package app;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -42,5 +43,12 @@ class MathUtilTest
                 ()->assertEquals(1,MathUtil.highestCommonFactor(8,9)),
                 ()->assertEquals(10,MathUtil.highestCommonFactor(80,70)),
                 ()->assertEquals(3,MathUtil.highestCommonFactor(6,9)));
+    }
+    @Test
+    void divisors()
+    {
+        List<Integer> divisors=MathUtil.divisors(120);
+        List<Integer> expected=List.of(1,2,3,4,5,6,8,10,12,15,20,24,30,40,60,120);
+        assertEquals(expected,divisors);
     }
 }
