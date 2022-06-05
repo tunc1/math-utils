@@ -51,4 +51,19 @@ class MathUtilTest
         List<Integer> expected=List.of(1,2,3,4,5,6,8,10,12,15,20,24,30,40,60,120);
         assertEquals(expected,divisors);
     }
+    @Test
+    void isPrime_prime()
+    {
+        assertTrue(MathUtil.isPrime(5));
+    }
+    @Test
+    void isPrime_notPrime()
+    {
+        assertFalse(MathUtil.isPrime(6));
+    }
+    @Test
+    void isPrime_1()
+    {
+        assertFalse(MathUtil.isPrime(1));
+    }
 }
