@@ -63,4 +63,14 @@ public class MathUtil
             result*=i;
         return result;
     }
+    public static int fibonacci(int n)
+    {
+        int result=1,tmp=1;
+        for(int i=0;i<n;i++)
+        {
+            result+=tmp;
+            tmp=result-tmp;
+        }
+        return result;
+    }
 }

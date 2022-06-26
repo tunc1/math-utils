@@ -76,4 +76,9 @@ class MathUtilTest
     {
         assertEquals(720,MathUtil.factorial(6));
     }
+    @Test
+    void fibonacci()
+    {
+        assertEquals(89,MathUtil.fibonacci(9));
+    }
 }
