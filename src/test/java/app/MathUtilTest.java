@@ -66,4 +66,14 @@ class MathUtilTest
     {
         assertFalse(MathUtil.isPrime(1));
     }
+    @Test
+    void factorial_0()
+    {
+        assertEquals(1,MathUtil.factorial(0));
+    }
+    @Test
+    void factorial()
+    {
+        assertEquals(720,MathUtil.factorial(6));
+    }
 }
