@@ -81,4 +81,14 @@ class MathUtilTest
     {
         assertEquals(89,MathUtil.fibonacci(9));
     }
+    @Test
+    void max()
+    {
+        assertEquals(5,MathUtil.max(-1,5,3,-7,2));
+    }
+    @Test
+    void min()
+    {
+        assertEquals(-7,MathUtil.min(-1,5,3,-7,2));
+    }
 }

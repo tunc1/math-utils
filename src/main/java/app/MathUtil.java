@@ -73,4 +73,24 @@ public class MathUtil
         }
         return result;
     }
+    public static double max(double ...array)
+    {
+        double max=Double.MIN_VALUE;
+        for(double v: array)
+        {
+            if(v>max)
+                max=v;
+        }
+        return max;
+    }
+    public static double min(double ...array)
+    {
+        double min=Double.MAX_VALUE;
+        for(double v: array)
+        {
+            if(v<min)
+                min=v;
+        }
+        return min;
+    }
 }
